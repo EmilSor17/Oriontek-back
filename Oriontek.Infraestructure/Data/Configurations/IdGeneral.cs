@@ -17,7 +17,7 @@ namespace Oriontek.Infraestructure.Data.Configurations
       builder.HasOne(ig => ig.Person)
              .WithOne(p => p.IdGeneral)
              .HasForeignKey<IdGeneral>(ig => ig.IdPerson)
-             .OnDelete(DeleteBehavior.Restrict);  // Cambiado a Restrict
+             .OnDelete(DeleteBehavior.Restrict);
     }
   }
 

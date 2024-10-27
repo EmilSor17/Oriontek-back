@@ -29,7 +29,7 @@ namespace Oriontek.Infraestructure.Data.Configurations
       builder.HasOne(d => d.Person)
              .WithOne(p => p.Address)
              .HasForeignKey<Address>(a => a.IdPerson)
-             .OnDelete(DeleteBehavior.Restrict);  // Cambiado a Restrict
+             .OnDelete(DeleteBehavior.Restrict);
     }
   }
 
